@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="AIO_PC:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="dev.war">
+      <element id="artifact" artifact-name="AIO_PC:war exploded" />
+    </root>
+  </artifact>
+</component>
