@@ -87,6 +87,23 @@ public class CommonUtils {
         return newc.trim();
     }
 
+    //获得精确到天的起始时间戳
+    public static String getTimeStampsDay(){
+
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String a = simpleDateFormat.format(date);
+        return a;
+    }
+
+    //获得精确到天的结束时间戳（20天）
+    public static String getEndTimeStampsDay(){
+        Date date = new Date();
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String firstWeekEnd = simpleDateFormat.format(new Date(date.getTime() + (long)20 * 24 * 60 * 60 * 1000));
+        return firstWeekEnd;
+    }
+
     /**
      * 获取uuid
      * @return

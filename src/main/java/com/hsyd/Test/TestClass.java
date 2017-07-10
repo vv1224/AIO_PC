@@ -19,7 +19,7 @@ public class TestClass{
     SendPatientCardController sendPatientCardController = new SendPatientCardController();
 
     @Test
-    public void testAnnotation(Object object){
+    public void testAnnotation(){
         List<Method> list = Arrays.asList(sendPatientCardController.getClass().getDeclaredMethods());
         for(int i=0;i<list.size();i++){
             Method field = list.get(i);

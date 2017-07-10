@@ -8,6 +8,7 @@ import com.hsyd.utils.CommonUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -62,7 +63,7 @@ public class SendPatientCardController {
     @RequestMapping("/inputphone")
     @UrlType(name="分配就诊卡")
     public void inputPhone(HttpServletResponse response, HttpServletRequest request, @RequestParam("address")String address, @RequestParam("birthday")String birthday,
-                           @RequestParam("idCard")String idCard, @RequestParam("patientName")String patientName,
+                           @RequestParam("idCard")String idCard, @RequestParam("patientName")String patientName,ModelAndView modelAndView,
                            @RequestParam("province")String province, @RequestParam("sex")String sex, @RequestParam("phone") String phone){
 
         String message = null;
@@ -77,7 +78,7 @@ public class SendPatientCardController {
                 "\"AGE\":" + CommonUtils.getAge(birthday) + ",\n" +
                 "\"ID_NO\":" + idCard + ",\n" +
                 "\"ADDRESS\":" + address + ",\n" +
-                "\"PHONE\":" + phone + ",\n" +
+                "\"PHONE\":" + phone  +
                 "} }";
         String cardNum = null;
         message = "success";
@@ -86,6 +87,9 @@ public class SendPatientCardController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        CommonUtils.JsonUtil(response,message,cardNum);
+        //CommonUtils.JsonUtil(response,message,cardNum);
+        modelAndView.addObject("data",cardNum);
+        modelAndView.setViewName("");
     }
+
 }
