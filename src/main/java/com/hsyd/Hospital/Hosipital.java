@@ -29,9 +29,15 @@ public class Hosipital {
         String url = null;
         if("华美医院".equals(hospitalName)){
             if("分配就诊卡".equals(type)) {
-                url = "http://124.42.117.50:12002/httphub?PRODUCER_SYSCODE=HS1000003&SERVICE_CODE=HS_S_A04&CONSUMER_SYSCODE=HS0001&MESSAGE_ID=" + CommonUtils.getUUID() + "&DTSEND=" + CommonUtils.getTimeStamps() + "&VERSION=1";
+                url = "http://124.42.117.50:12002/httphub?PRODUCER_SYSCODE=HS0000002&SERVICE_CODE=HS_S_A04&CONSUMER_SYSCODE=HS0001&MESSAGE_ID=" + CommonUtils.getUUID() + "&DTSEND=" + CommonUtils.getTimeStamps() + "&VERSION=1";
             }else if("查询科室".equals(type)){
                 url = "http://124.42.117.50:12002/httphub?PRODUCER_SYSCODE=HS0000002&SERVICE_CODE=HS_S_B01&CONSUMER_SYSCODE=HS0001&MESSAGE_ID=" + CommonUtils.getUUID() + "&DTSEND=" + CommonUtils.getTimeStamps() + "&VERSION=1";
+            }else if("选择医师".equals(type)){
+                url = "http://124.42.117.50:12002/httphub?PRODUCER_SYSCODE=HS0000002&SERVICE_CODE=HS_S_B02&CONSUMER_SYSCODE=HS0001&MESSAGE_ID=" + CommonUtils.getUUID() + "&DTSEND=" + CommonUtils.getTimeStamps() + "&VERSION=1";
+            }else if("选择排班".equals(type)){
+                url = "http://124.42.117.50:12002/httphub?PRODUCER_SYSCODE=HS0000002&SERVICE_CODE=HS_S_B03&CONSUMER_SYSCODE=HS0001&MESSAGE_ID=" + CommonUtils.getUUID() + "&DTSEND=" + CommonUtils.getTimeStamps() + "&VERSION=1";
+            }else if("查询就诊卡".equals(type)){
+                url = "http://124.42.117.50:12002/httphub?PRODUCER_SYSCODE=HS0000002&SERVICE_CODE=HS_S_A01&CONSUMER_SYSCODE=HS0001&MESSAGE_ID=" + CommonUtils.getUUID() + "&DTSEND=" + CommonUtils.getTimeStamps() + "&VERSION=1";
             }
         }
         return url;
