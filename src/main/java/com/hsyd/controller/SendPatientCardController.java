@@ -62,7 +62,7 @@ public class SendPatientCardController {
      */
     @RequestMapping("/inputphone")
     @UrlType(name="分配就诊卡")
-    public void inputPhone(HttpServletResponse response, HttpServletRequest request, @RequestParam("address")String address, @RequestParam("birthday")String birthday,
+    public Object inputPhone(HttpServletResponse response, HttpServletRequest request, @RequestParam("address")String address, @RequestParam("birthday")String birthday,
                            @RequestParam("idCard")String idCard, @RequestParam("patientName")String patientName,ModelAndView modelAndView,
                            @RequestParam("province")String province, @RequestParam("sex")String sex, @RequestParam("phone") String phone){
 
@@ -90,6 +90,7 @@ public class SendPatientCardController {
         //CommonUtils.JsonUtil(response,message,cardNum);
         modelAndView.addObject("data",cardNum);
         modelAndView.setViewName("");
+        return modelAndView;
     }
 
 }

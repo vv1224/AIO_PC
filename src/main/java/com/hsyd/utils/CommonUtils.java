@@ -100,7 +100,7 @@ public class CommonUtils {
     public static String getEndTimeStampsDay(){
         Date date = new Date();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
-        String firstWeekEnd = simpleDateFormat.format(new Date(date.getTime() + (long)20 * 24 * 60 * 60 * 1000));
+        String firstWeekEnd = simpleDateFormat.format(new Date(date.getTime() + (long)14 * 24 * 60 * 60 * 1000));
         return firstWeekEnd;
     }
 
