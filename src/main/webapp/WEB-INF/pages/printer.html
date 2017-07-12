@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>医院自助服务管理系统-打印</title>
+    <link rel="stylesheet" href="css/base.css" >
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/printer.css"/>
+</head>
+<body>
+
+<div class="box">
+    <!--导航1-->
+    <div class="nav">
+        <div class="numBox"><span class="number">1</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        化验单打印
+    </div>
+    <!--导航2-->
+    <div class="nav">
+        <div class="numBox"><span class="number">2</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        刷卡
+    </div>
+    <!--导航3-->
+    <div class="nav navActive">
+        <div class="numBox"><span class="number">3</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        打印
+    </div>
+    <!--导航4-->
+    <div class="nav">
+        <div class="numBox"><span class="number">4</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        完成
+    </div>
+
+
+    <!--内容-->
+    <div class="content">
+        <div class="top mB40">
+            <label for="name" class="f30">患者：</label>
+            <input type="text" id="name" class="w200 mR50" value="张三"/>
+            <label for="cardId" class="f30">卡号：</label>
+            <input type="text" id="cardId" class="w490" value="123456"/>
+        </div>
+        <div class="bottom">
+            <table class="table tableStriped">
+                <thead>
+                    <th>患者编号</th>
+                    <th>化验编号</th>
+                    <th>化验名称</th>
+                    <th>化验简称</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HIS1234567890123</td>
+                        <td>CF1001</td>
+                        <td>西药</td>
+                        <td>处方</td>
+                    </tr>
+                    <tr>
+                        <td>HIS1234567890123</td>
+                        <td>CF1001</td>
+                        <td>乙肝常规</td>
+                        <td>检查</td>
+                    </tr>
+                    <tr>
+                        <td>HIS1234567890123</td>
+                        <td>CF1001</td>
+                        <td>腹部彩超</td>
+                        <td>检查</td>
+                    </tr>
+                    <tr>
+                        <td>HIS1234567890123</td>
+                        <td>CF1001</td>
+                        <td>腹部彩超</td>
+                        <td>检查</td>
+                    </tr>
+                    <tr>
+                        <td>HIS1234567890123</td>
+                        <td>CF1001</td>
+                        <td>腹部彩超</td>
+                        <td>检查</td>
+                    </tr>
+                    <tr>
+                        <td>HIS1234567890123</td>
+                        <td>CF1001</td>
+                        <td>腹部彩超</td>
+                        <td>检查</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="span">
+            可打印化验单：<span class="fOrange">6张</span>
+        </div>
+    </div>
+
+    <!-- 倒计时-->
+    <div class="timer">
+        28
+    </div>
+
+    <!--按钮-->
+    <!--按钮-->
+    <a href="#" class="btn">
+        取消
+    </a>
+    <a href="#" class="btn btnOk mR10">
+        打印
+    </a>
+</div>
+
+
+
+
+
+
+
+
+<script src="js/jquery-2.2.3.js"></script>
+<script src="js/common.js"></script>
+
+
+</body>
+</html>

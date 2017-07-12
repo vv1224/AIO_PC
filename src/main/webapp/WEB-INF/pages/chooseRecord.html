@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>医院自助服务管理系统-选择预约记录</title>
+    <link rel="stylesheet" href="css/base.css" >
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/chooseRecord.css"/>
+</head>
+<body>
+
+<div class="box">
+    <!--导航1-->
+    <div class="nav">
+        <div class="numBox"><span class="number">1</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        预约取号
+    </div>
+    <!--导航2-->
+    <div class="nav">
+        <div class="numBox"><span class="number">2</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        刷卡
+    </div>
+    <!--导航3-->
+    <div class="nav navActive">
+        <div class="numBox"><span class="number">3</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        选择预约记录
+    </div>
+    <!--导航4-->
+    <div class="nav">
+        <div class="numBox"><span class="number">4</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        取号
+    </div>
+    <!--导航5-->
+    <div class="nav">
+        <div class="numBox"><span class="number">5</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        完成
+    </div>
+
+
+    <!--内容-->
+    <div class="content">
+        <div class="top mB40">
+            <label for="name" class="f30">患者：</label>
+            <input type="text" id="name" class="w200 mR50" value="张三"/>
+            <label for="cardId" class="f30">卡号：</label>
+            <input type="text" id="cardId" class="w490" value="123456"/>
+        </div>
+        <p class="prompt f18 mB40">医生开单后，请先缴费，再做检查或到药房拿药。</p>
+        <div class="bottom">
+            <table class="table tableStriped">
+                <thead>
+                    <th>选择</th>
+                    <th>预约时间</th>
+                    <th>科室</th>
+                    <th>医生</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>2017-07-11</td>
+                        <td>保健科</td>
+                        <td>华佗</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>2017-07-11</td>
+                        <td>保健科</td>
+                        <td>华佗</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>2017-07-11</td>
+                        <td>保健科</td>
+                        <td>华佗</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>2017-07-11</td>
+                        <td>保健科</td>
+                        <td>华佗</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>2017-07-11</td>
+                        <td>保健科</td>
+                        <td>华佗</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page">
+            <a href="#"><span class="triangle-left"></span>&nbsp;上一页</a>
+            <a href="#" class="mL30">下一页&nbsp;<span class="triangle-right"></span></a>
+        </div>
+    </div>
+
+    <!-- 倒计时-->
+    <div class="timer">
+        28
+    </div>
+
+    <!--按钮-->
+    <a href="#" class="btn">
+        取消
+    </a>
+    <a href="#" class="btn btnOk mR10">
+        确定
+    </a>
+</div>
+
+
+
+
+
+
+
+
+<script src="js/jquery-2.2.3.js"></script>
+<script src="js/common.js"></script>
+<script>
+
+</script>
+
+</body>
+</html>

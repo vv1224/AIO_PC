@@ -1,0 +1,45 @@
+/*发卡成功样式*/
+/*&&打印成功页面*/
+/*&&缴费成功页面*/
+.ok{
+    width:121px;
+    height:128px;
+    background:url("../img/ok.png") no-repeat top left;
+    position: absolute;
+    left:214px;
+    top:202px;
+}
+.contentText{
+    width:460px;
+    /*height:293px;*/
+    height: auto;
+    /*background: chartreuse;*/
+    position: absolute;
+    top:194px;
+    left:388px;
+}
+.fcGreen{
+    color:#2ECC71;
+    font-family:"Arial Black" ;
+}
+.cardId{
+    color:#DD5F0E;
+}
+.fRed{
+    color:#CF3039;
+}
+
+
+
+/*打印成功页面*/
+
+
+/*缴费成功页面*/
+
+
+
+
+
+
+
+

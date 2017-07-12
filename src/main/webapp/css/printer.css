@@ -1,0 +1,33 @@
+/*打印化验单页面(表格页面)*/
+.content{
+    padding:54px 40px;
+}
+.w490{width: 490px!important;}
+
+input{
+    color:#114C8F !important;
+}
+.span{
+    position: absolute;
+    bottom:30px;
+    left:40px;
+    font-size: 18px;
+}
+.fOrange{
+    color:orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

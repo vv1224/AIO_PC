@@ -1,0 +1,58 @@
+/*Ê×Ò³ÑùÊ½*/
+.title{
+    width:410px;
+    height:68px;
+    background: url("../img/title.png") no-repeat top left;
+    display: inline-block;
+    vertical-align: middle;
+}
+.mL27{margin-left: 27px!important;}
+.contentIndex{
+    width:1024px;height:640px;
+    margin-top: 36px;
+}
+
+.conLeft{
+    width:386px;height:640px;
+}
+.conRight{
+    width:638px;height:640px;
+    border:3.5px solid #114C8F;
+}
+.cRBox{
+    width:33.333333%;
+    height: 211px;
+    display: block;
+    float: left;
+    border: 1.5px solid #114C8F;
+    background-image:-webkit-linear-gradient(to top, #E5E4E4,#fff);
+    background-image:linear-gradient(to top, #E5E4E4,#fff);
+    text-align: center;
+}
+.cRBox>img{
+    padding-top: 40px;
+    /*padding-left: 40px;*/
+}
+.imgTitle{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Arial Black";
+    color:#114C8F;
+    margin-top: 32px;
+}
+
+
+
+
+
+
+
+
+.mT38{margin-top: 38px!important;}
+
+
+
+
+
+
+

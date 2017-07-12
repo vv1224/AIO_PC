@@ -1,0 +1,59 @@
+/*确认患者信息页面样式*/
+.content{
+    padding:56px 46px;
+}
+.prompt{
+    color:red;
+}
+.left,.right{
+    width:440px;
+    height: 245px;
+}
+.right{width:492px!important;}
+.right label{
+    display: inline-block;
+    width:150px;
+    text-align: right;
+}
+input{
+    color:#114C8F !important;
+}
+.mT35{margin-top: 35px!important;}
+textarea{
+    padding:6px 12px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 24px;
+    color:#333;
+    vertical-align: top;
+    color:#114C8F !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

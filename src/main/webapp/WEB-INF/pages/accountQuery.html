@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>医院自助服务管理系统-账户交易查询</title>
+    <link rel="stylesheet" href="css/base.css" >
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/printer.css"/>
+</head>
+<body>
+
+<div class="box">
+    <!--导航1-->
+    <div class="nav">
+        <div class="numBox"><span class="number">1</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        化验单打印
+    </div>
+    <!--导航2-->
+    <div class="nav">
+        <div class="numBox"><span class="number">2</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        刷卡
+    </div>
+    <!--导航3-->
+    <div class="nav navActive">
+        <div class="numBox"><span class="number">3</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        打印
+    </div>
+    <!--导航4-->
+    <div class="nav">
+        <div class="numBox"><span class="number">4</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        完成
+    </div>
+
+
+    <!--内容-->
+    <div class="content">
+        <div class="top mB40">
+            <label for="name" class="f30">患者：</label>
+            <input type="text" id="name" class="w200 mR50" value="张三"/>
+            <label for="cardId" class="f30">卡号：</label>
+            <input type="text" id="cardId" class="w490" value="123456"/>
+        </div>
+        <div class="bottom">
+            <table class="table tableStriped">
+                <thead>
+                    <th>序号</th>
+                    <th>变动类别</th>
+                    <th>变动金额</th>
+                    <th>变动时间</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>000011</td>
+                        <td>就诊卡工本费</td>
+                        <td>-10</td>
+                        <td>2017-07-10 09:30</td>
+                    </tr>
+                    <tr>
+                        <td>000012</td>
+                        <td>充值</td>
+                        <td>+100</td>
+                        <td>2017-07-10 09:30</td>
+                    </tr>
+                    <tr>
+                        <td>000013</td>
+                        <td>挂号</td>
+                        <td>-20</td>
+                        <td>2017-07-10 09:30</td>
+                    </tr>
+                    <tr>
+                        <td>000014</td>
+                        <td>血脂检查</td>
+                        <td>-30</td>
+                        <td>2017-07-10 09:30</td>
+                    </tr>
+                    <tr>
+                        <td>000015</td>
+                        <td>血常规检查</td>
+                        <td>-45</td>
+                        <td>2017-07-10 09:30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page">
+            <a href="#"><span class="triangle-left"></span>&nbsp;上一页</a>
+            <a href="#" class="mL30">下一页&nbsp;<span class="triangle-right"></span></a>
+        </div>
+    </div>
+
+    <!-- 倒计时-->
+    <div class="timer">
+        28
+    </div>
+
+    <!--按钮-->
+    <!--按钮-->
+    <a href="#" class="btn">
+        回首页
+    </a>
+    <a href="#" class="btn btn mR10">
+        返回上页
+    </a>
+</div>
+
+
+
+
+
+
+
+
+<script src="js/jquery-2.2.3.js"></script>
+<script src="js/common.js"></script>
+
+
+</body>
+</html>

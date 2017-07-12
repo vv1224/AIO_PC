@@ -3,18 +3,12 @@ package com.hsyd.controller;
 import com.hsyd.Hospital.Hosipital;
 import com.hsyd.utils.CatchInterfaceUtil;
 import com.hsyd.utils.CommonUtils;
-import com.sun.deploy.net.HttpResponse;
-import org.apache.xpath.operations.Mod;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.jws.WebParam;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -183,8 +177,6 @@ public class RegistrationController {
 
         modelAndView.addObject("list",list);
         modelAndView.setViewName("");
-        return  modelAndView;
+        return modelAndView;
     }
-
-
 }

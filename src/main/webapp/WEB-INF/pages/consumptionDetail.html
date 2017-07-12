@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>医院自助服务管理系统-消费明细查询</title>
+    <link rel="stylesheet" href="css/base.css" >
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/consumptionDetail.css"/>
+</head>
+<body>
+
+<div class="box">
+    <img src="img/hospitalLogo.png" class="verticalM" alt=""/>
+    <div class="title mL27"></div>
+    <div class="time fr f24 mT60">2017年7月10日 18:16</div>
+
+
+    <!--内容-->
+    <div class="content">
+        <div class="top mB30">
+            <label for="name" class="f30">患者：</label>
+            <input type="text" id="name" class="w200 mR50 f26" value="张三"/>
+            <label for="cardId" class="f30">卡号：</label>
+            <input type="text" id="cardId" class="w490 f26" value="123456"/>
+        </div>
+        <div class="date mB20">
+            <!--选择时间-->
+            <label for="JeStartTime" class="f30">日期：</label>
+            <input class="w200 f24" id="JeStartTime" type="text" placeholder="">
+            <img src="img/date.png" alt="" class="date1"/>
+            <!--选择时间-->
+            <label for="JeStartTime" class="f30"> - </label>
+            <input class="w200 f24" id="JeEndTime" type="text" placeholder="">
+            <img src="img/date.png" alt="" class="date2"/>
+            <span class="Reg">时间范围有误，请重新选择！</span>
+        </div>
+        <div class="bottom">
+            <table class="table tableStriped">
+                <thead>
+                <th>选择</th>
+                <th>时间</th>
+                <th>项目名称</th>
+                <th>规格</th>
+                <th>单位</th>
+                <th>数量</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>2017-07-11</td>
+                        <td>就诊卡工本费</td>
+                        <td>/</td>
+                        <td>张</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>2017-07-11</td>
+                        <td>就诊卡工本费</td>
+                        <td>/</td>
+                        <td>张</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>2017-07-11</td>
+                        <td>就诊卡工本费</td>
+                        <td>/</td>
+                        <td>张</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>2017-07-11</td>
+                        <td>就诊卡工本费</td>
+                        <td>/</td>
+                        <td>张</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>2017-07-11</td>
+                        <td>就诊卡工本费</td>
+                        <td>/</td>
+                        <td>张</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>2017-07-11</td>
+                        <td>就诊卡工本费</td>
+                        <td>/</td>
+                        <td>张</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page">
+            <a href="#"><span class="triangle-left"></span>&nbsp;上一页</a>
+            <a href="#" class="mL30">下一页&nbsp;<span class="triangle-right"></span></a>
+        </div>
+    </div>
+
+    <!-- 倒计时-->
+    <div class="timer">
+        28
+    </div>
+
+    <!--按钮-->
+    <a href="#" class="btn">
+        回首页
+    </a>
+</div>
+
+
+
+
+
+
+
+
+<script src="js/jquery-2.2.3.js"></script>
+<script src="js/jedate/jedate.js"></script>
+<script src="js/common.js"></script>
+<script>
+    +function(){
+        var sDate,eDate;
+        // 日历
+        jeDate({
+            dateCell : "#JeStartTime",//isinitVal:true,
+            format : "YYYY-MM-DD",//设置日期格式
+            isTime : false, //isClear:false,
+            minDate : "2014-09-19 00:00:00",//设置最小时间
+            choosefun: function(val){
+                sDate=val;
+                if(eDate!=undefined && sDate>eDate){
+                    $("#JeStartTime").val("");
+                    sDate=0;
+                    $("#JeStartTime").focus();
+                    $(".Reg").css("display","inline-block");
+                }else{
+                    $(".Reg").css("display","none");
+                }
+            },
+            clearfun:function(val) {
+                sDate=0;
+            }
+        });
+        jeDate({
+            dateCell : "#JeEndTime",//isinitVal:true,
+            format : "YYYY-MM-DD",//设置日期格式
+            isTime : false, //isClear:false,
+            minDate : "2014-09-19 00:00:00",//设置最小时间
+            choosefun: function(val){
+                eDate=val;
+                if(sDate>eDate){
+                    $("#JeEndTime").val("");
+                    eDate=undefined;
+                    $("#JeEndTime").focus();
+                    $(".Reg").css("display","inline-block");
+                }else{
+                    $(".Reg").css("display","none");
+                }
+            },
+            clearfun:function(val) {
+                eDate=undefined;
+            }
+        });
+    }();
+</script>
+
+</body>
+</html>

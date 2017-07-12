@@ -1,0 +1,42 @@
+/*消费明细查询页面样式*/
+/*&&住院每日清单页面样式*/
+.title{
+    width:410px;
+    height:68px;
+    background: url("../img/title.png") no-repeat top left;
+    display: inline-block;
+    vertical-align: middle;
+}
+.mL27{margin-left: 27px!important;}
+
+
+.content{
+    padding:48px 46px;
+}
+input{
+    color:#114C8F !important;
+}
+
+.Reg{
+    color:red;
+    font-size: 18px;
+    display: none;
+}
+.date{
+    position: relative;
+}
+.date1{
+    position: absolute;
+    top:13px;left:264px;
+}
+.date2{
+    position: absolute;
+    top:13px;left:484px;
+}
+
+
+/*住院每日清单页面样式*/
+
+
+
+

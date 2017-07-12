@@ -1,0 +1,88 @@
+
+
+.conLeft{
+    width:472px;
+}
+.moneyInp{
+    padding:6px 12px;
+    border-radius: 10px;
+    outline: none;
+}
+.w350{width: 350px !important;}
+.mT190{margin-top: 190px!important;}
+
+.conRight{
+    width:552px;
+    padding-top: 128px;
+}
+
+.conRight_Left,.conRight_Middle,.conRight_Right{
+    width:150px;
+}
+
+
+
+
+
+.num{
+    width:150px;
+    height:96px;
+    display: inline-block;
+    background: #24558C;
+    background-image:-webkit-linear-gradient(to top, #24558C,#3A71A9);
+    background-image:linear-gradient(to top, #24558C,#3A71A9);
+    box-shadow: 0 3px 3px 0px #26282A;
+    text-align: center;
+    line-height: 96px;
+    color:#fff;
+    font-family: Arial;
+    position: relative;
+}
+.numChange{
+    background: #A8291D;
+    background-image:-webkit-linear-gradient(to top, #A8291D,#F53F23);
+    background-image:linear-gradient(to top, #A8291D,#F53F23);
+    box-shadow: 0 3px 3px 0px #26282A;
+}
+.numOk{
+    background: #F47819;
+    background-image:-webkit-linear-gradient(to top, #F47819,#F4AE26);
+    background-image:linear-gradient(to top, #F47819,#F4AE26);
+    box-shadow: 0 3px 3px 0px #26282A;
+}
+.mT16{margin-top: 16px!important;}
+.mL16{margin-left: 16px!important;}
+
+
+
+
+
+
+
+
+
+/*����סԺ����ʽinputHospitalId.html*/
+
+
+/*����������ʽ inputPWD.html*/
+.fRed{
+    color:#e4393c;
+}
+.font{
+    position: absolute;
+    top:32px;left:50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color:rgba(255,255,255,0.7);
+}
+
+.wrong{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    left:-40px;
+}
+
+.error{
+    display: none;
+}

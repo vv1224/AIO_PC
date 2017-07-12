@@ -1,0 +1,230 @@
+/*模块化样式*/
+body{
+    background: url("../img/bg.png") no-repeat top left;
+    background-size:cover;
+}
+.box{
+    width:1024px;
+    height:874px;
+    position: absolute;
+    top:50%;left:50%;
+    transform: translate(-50%,-50%);
+    /*background-color: #fffd92;*/
+}
+
+
+/*导航按钮样式*/
+.nav{
+    margin-left: 2px;
+    padding:12px 18px;
+    background: #3e3e3e;
+    background-image:-webkit-linear-gradient(to top, #3e3e3e,#626262);
+    background-image:linear-gradient(to top, #3e3e3e,#626262);
+    box-shadow: -1px 2px 2px 1px #26282A;
+    display:inline-block;
+    border-radius: 5px;
+    font-size:30px;
+    color:#fff;
+    position: relative;
+    padding-left: 73px;
+    cursor: default;
+}
+.navActive{
+    background: #F47819;
+    background-image:-webkit-linear-gradient(to top, #F47819,#F4AE26);
+    background-image:linear-gradient(to top, #F47819,#F4AE26);
+}
+/*导航按数字框*/
+.numBox{
+    position: absolute;
+    top:8px;left:16px;
+    display: inline-block;
+    width: 62px;
+    height:100%;
+}
+/*导航按钮数字*/
+.number{
+    font-family: "Arial Black";
+    font-size:36px;
+    display: inline-block;
+}
+/*导航按钮尖角*/
+.nav p{
+    display: inline-block;
+    position: absolute;
+    top: 4px;left:48px;
+}
+
+/*内容*/
+.content{
+    background: url("../img/container.png") no-repeat left top;
+    width: 1024px;
+    height:690px;
+    margin-top: 24px;
+    box-shadow: 0 4px 20px 7px rgba(0,0,0,0.3);
+    position: relative;
+}
+
+
+
+/*倒计时模块*/
+.timer{
+    display: inline-block;
+    background: url("../img/timer.png") no-repeat left top;
+    width:66px;
+    height:66px;
+    margin-top: 28px;
+    font-size:26px;
+    text-align: center;
+    line-height: 66px;
+    color: #0E4C91;
+    font-weight: 700;
+}
+
+
+/*按钮*/
+.btn{
+    font-family:sans-serif;
+    width:158px;
+    height: 66px;
+    display: inline-block;
+    float: right;
+    background: url("../img/btn.png") no-repeat left top;
+    margin-top: 28px;
+    text-align: center;
+    font-size:26px;
+    line-height: 66px;
+    color: #0E4C91;
+}
+.btnOk{
+    background: url("../img/btn_ok.png") no-repeat left top;
+    color:#fff;
+}
+
+input[type='text']{
+    padding:6px 12px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 24px;
+    color:#333;
+}
+input{
+    color:#114C8F !important;
+}
+
+/*表格样式*/
+
+.table {
+    border-collapse: collapse !important;
+}
+.table th{
+    background-color: #DEE5EC !important;
+    border-bottom:0.1px solid rgba(18, 77, 144, 0.6) !important;
+    border-top:0.1px solid rgba(18, 77, 144, 0.6) !important;
+    color:#114C8F;
+    font-size: 24px!important;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    text-align: left;
+    font-size: 20px;
+    padding: 15px 0 15px 30px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+}
+.table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd;
+}
+.table > caption + thead > tr:first-child > th,
+.table > colgroup + thead > tr:first-child > th,
+.table > thead:first-child > tr:first-child > th,
+.table > caption + thead > tr:first-child > td,
+.table > colgroup + thead > tr:first-child > td,
+.table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+}
+.table > tbody + tbody {
+    border-top: 2px solid #ddd;
+}
+.table .table {
+    background-color: #fff;
+}
+.tableStriped > tbody > tr:nth-of-type(odd) {
+    background-color: #E4E4E4 !important;
+}
+.tableStriped > tbody > tr:nth-of-type(even) {
+    background-color: #f5f5f5 !important;
+}
+
+
+/*上一页下一页样式*/
+.page{
+    position: absolute;
+    bottom:35px;right:70px;
+}
+.page a{
+    color:#31669E;
+    font-size: 20px;
+    font-weight: bold;
+}
+.triangle-left {
+    vertical-align: middle;
+    display:inline-block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 15px solid #31669E;
+    border-bottom: 8px solid transparent;
+}
+.triangle-right {
+    vertical-align: middle;
+    display:inline-block;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-left: 15px solid #31669E;
+    border-bottom: 8px solid transparent;
+}
+
+
+
+/*复选框对号样式*/
+
+.piaochecked {
+    border: 1px solid #666;
+    background-color: #fff;
+    width: 26px;
+    height: 26px;
+    float: left;
+    cursor: pointer;
+    margin-left: 10px;
+    text-align: center;
+    background-image: url(../img/checkBox.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.on_check {
+    background-position: 0 -27px;
+}
+.radioclass {
+    opacity: 0;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+
+

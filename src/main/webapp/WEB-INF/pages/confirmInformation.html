@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>医院自助服务管理系统-确认患者信息</title>
+    <link rel="stylesheet" href="css/base.css" >
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/confirmInformation.css"/>
+</head>
+<body>
+
+<div class="box">
+    <!--导航1-->
+    <div class="nav">
+        <div class="numBox"><span class="number">1</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        发就诊卡
+    </div>
+    <!--导航2-->
+    <div class="nav">
+        <div class="numBox"><span class="number">2</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        刷身份证
+    </div>
+    <!--导航3-->
+    <div class="nav navActive">
+        <div class="numBox"><span class="number">3</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        确认患者信息
+    </div>
+    <!--导航4-->
+    <div class="nav">
+        <div class="numBox"><span class="number">4</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        充值
+    </div>
+    <!--导航5-->
+    <div class="nav">
+        <div class="numBox"><span class="number">5</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        完成
+    </div>
+
+
+    <!--内容-->
+    <div class="content">
+        <div class="conLeft fl">
+            <p class="mT190 mL60 f30">请输入手机号码</p>
+            <input type="text" class="moneyInp w350 mL60 f30 mT20" id="tel" maxlength="11"/>
+            <p class="fRed error f20 mL60 mT20" id="error">手机号有误！<br/>请更正</p>
+        </div>
+        <div class="conRight fr">
+            <div class="conRight_Left fl">
+                <a href="javascript:;" class="num f50" name="number">1</a>
+                <a href="javascript:;" class="num f50 mT16" name="number">4</a>
+                <a href="javascript:;" class="num f50 mT16" name="number">7</a>
+                <a href="javascript:;" class="num f38 mT16 numChange" id="numChange">更正</a>
+            </div>
+            <div class="conRight_Middle mL16 fl">
+                <a href="javascript:;" class="num f50" name="number">2</a>
+                <a href="javascript:;" class="num f50 mT16" name="number">5</a>
+                <a href="javascript:;" class="num f50 mT16" name="number">8</a>
+                <a href="javascript:;" class="num f38 mT16" name="number">0</a>
+            </div>
+            <div class="conRight_Right mL16 fl">
+                <a href="javascript:;" class="num f50" name="number">3</a>
+                <a href="javascript:;" class="num f50 mT16" name="number">6</a>
+                <a href="javascript:;" class="num f50 mT16" name="number">9</a>
+                <a href="javascript:;" class="num f38 mT16 numOk">确认</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 倒计时-->
+    <div class="timer">
+        <!--60-->
+        60
+    </div>
+
+    <!--按钮-->
+    <a href="#" class="btn">
+       取消
+    </a>
+</div>
+
+
+
+
+
+
+
+
+<script src="js/jquery-2.2.3.js"></script>
+<script src="js/common.js"></script>
+<script>
+//    验证手机号码的正则函数
+    function reg(tel){
+        var reg=/^0?(13|14|15|18)[0-9]{9}$/;
+        var re = new RegExp(reg);
+        if (re.test(tel)) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+    +function(){
+        var listNumber=$("a[name='number']");
+        var Hid="";
+        listNumber.click(function(){
+            console.log($(this).html());
+            Hid +=$(this).html();
+            $("#tel").val(Hid);
+            if(Hid.length>11){
+                $("#error").removeClass("error");
+            }else{
+                $("#error").addClass("error");
+            }
+        });
+        $("#numChange").click(function(){
+            Hid="";
+            $("#tel").val(Hid);
+        })
+    }();
+timer();
+</script>
+
+</body>
+</html>

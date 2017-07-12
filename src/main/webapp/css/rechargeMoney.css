@@ -1,0 +1,46 @@
+/*充值页面样式*/
+.moneyBg{
+    /*position: absolute;*/
+    border-radius: 10px;
+    display: inline-block;
+    width:200px;
+    height:80px;
+    background-color:#24558C ;
+    background-image:-webkit-linear-gradient(to top, #24558C,#3A71A9);
+    background-image:linear-gradient(to top, #24558C,#3A71A9);
+    color:#fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 40px;
+    box-shadow: 0px 4px 2px 0px #000;
+}
+.conLeft,.conRight{
+    width:240px;
+    display: inline-block;
+    /*background: red;*/
+}
+.conMiddle{
+    width:544px;
+    display: inline-block;
+    /*background: green;*/
+}
+.mT155{
+    margin-top: 155px!important;
+}
+.mT72{
+    margin-top: 72px!important;
+}
+.mT180{
+    margin-top: 180px!important;
+}
+
+
+
+
+
+
+
+
+
+
+

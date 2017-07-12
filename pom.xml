@@ -331,11 +331,7 @@
           <include>**/*.xml</include>
         </includes>
         <filtering>true</filtering>
-        <!-- 排除dev、test目录下的文件 -->
-        <excludes>
-          <exclude>dev/*</exclude>
-          <exclude>test/*</exclude>
-        </excludes>
+
       </resource>
       <resource>
         <directory>src/main/java</directory>
@@ -345,10 +341,7 @@
       </resource>
       <resource>
         <directory>src/main/resources</directory>
-        <!-- 包含，若没有指定则默认为 activeByDefault 标签定义的profile -->
-        <includes>
-          <include>${profiles.activation}/*.properties</include>
-        </includes>
+
       </resource>
     </resources>
     <!-- 配置maven -->
@@ -416,24 +409,5 @@
     </plugins>
   </build>
 
-  <!--  动态切换环境 -->
-  <profiles>
-    <!-- 开发环境 -->
-    <profile>
-      <id>dev</id>
-      <properties>
-        <profiles.activation>dev</profiles.activation>
-      </properties>
-      <activation>
-        <activeByDefault>true</activeByDefault>
-      </activation>
-    </profile>
-    <!-- 测试环境 -->
-    <profile>
-      <id>test</id>
-      <properties>
-        <profiles.activation>test</profiles.activation>
-      </properties>
-    </profile>
-  </profiles>
+
 </project>

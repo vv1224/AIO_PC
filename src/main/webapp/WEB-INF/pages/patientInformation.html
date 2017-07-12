@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>医院自助服务管理系统-确认患者信息</title>
+    <link rel="stylesheet" href="css/base.css" >
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/patientInformation.css"/>
+</head>
+<body>
+
+<div class="box">
+    <!--导航1-->
+    <div class="nav">
+        <div class="numBox"><span class="number">1</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        发就诊卡
+    </div>
+    <!--导航2-->
+    <div class="nav">
+        <div class="numBox"><span class="number">2</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        刷身份证
+    </div>
+    <!--导航3-->
+    <div class="nav navActive">
+        <div class="numBox"><span class="number">3</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        确认患者信息
+    </div>
+    <!--导航4-->
+    <div class="nav">
+        <div class="numBox"><span class="number">4</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        充值
+    </div>
+    <!--导航5-->
+    <div class="nav">
+        <div class="numBox"><span class="number">5</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        完成
+    </div>
+
+
+    <!--内容-->
+    <div class="content">
+        <p class="prompt f18 mB40">请确认您的二代身份证信息，然后按“确认”为您发就诊卡</p>
+        <div class="middle">
+            <div class="left fl">
+                <div>
+                    <label for="name" class="f30">姓名：</label>
+                    <input type="text" id="name" class="w300" value="詹春华"/>
+                </div>
+                <div class="mT35">
+                    <label for="birth" class="f30">生日：</label>
+                    <input type="text" id="birth" class="w300" value="1986-05-09"/>
+                </div>
+                <div class="mT35">
+                    <label for="nation" class="f30">民族：</label>
+                    <input type="text" id="nation" class="w300" value="汉族"/>
+                </div>
+            </div>
+            <div class="right fr">
+                <div>
+                    <label for="sex" class="f30">性别：</label>
+                    <input type="text" id="sex" class="w300" value="女"/>
+                </div>
+                <div class="mT35">
+                    <label for="province" class="f30">省份：</label>
+                    <input type="text" id="province" class="w300" value="北京"/>
+                </div>
+                <div class="mT35">
+                    <label for="idCard" class="f30">身份证号：</label>
+                    <input type="text" id="idcard" class="w300" value="110001198505094493"/>
+                </div>
+            </div>
+
+            <div class="mT35">
+                <label for="address" class="f30">地址：</label>
+                <textarea name="" class="" id="address" cols="55" rows="4">北京市朝阳区上地街道</textarea>
+            </div>
+        </div>
+    </div>
+
+    <!-- 倒计时-->
+    <div class="timer">
+        28
+    </div>
+
+    <!--按钮-->
+    <a href="#" class="btn">
+        取消
+    </a>
+    <a href="./toinputphone.do" class="btn btnOk mR10" >
+        确定
+    </a>
+</div>
+
+
+<script src="js/jquery-2.2.3.js"></script>
+<script src="js/common.js"></script>
+
+
+<script>
+
+</script>
+
+
+</body>
+</html>

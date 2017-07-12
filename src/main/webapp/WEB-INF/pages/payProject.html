@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>医院自助服务管理系统-缴费项目</title>
+    <link rel="stylesheet" href="css/base.css" >
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/chooseRecord.css"/>
+</head>
+<body>
+
+<div class="box">
+    <!--导航1-->
+    <div class="nav">
+        <div class="numBox"><span class="number">1</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        门诊缴费
+    </div>
+    <!--导航2-->
+    <div class="nav">
+        <div class="numBox"><span class="number">2</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        刷卡
+    </div>
+    <!--导航3-->
+    <div class="nav navActive">
+        <div class="numBox"><span class="number">3</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        选择缴费单据
+    </div>
+    <!--导航4-->
+    <div class="nav">
+        <div class="numBox"><span class="number">4</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        支付
+    </div>
+    <!--导航5-->
+    <div class="nav">
+        <div class="numBox"><span class="number">5</span></div>
+        <p><img src="img/1.png" alt=""/></p>
+        完成
+    </div>
+
+
+    <!--内容-->
+    <div class="content">
+        <div class="top mB20">
+            <label for="name" class="f30">患者：</label>
+            <input type="text" id="name" class="w200 mR50" value="张三"/>
+            <label for="cardId" class="f30">卡号：</label>
+            <input type="text" id="cardId" class="w490" value="123456"/>
+        </div>
+        <p class="prompt f18 mB20">医生开单后，请先缴费，再做检查或到药房拿药。</p>
+        <div class="bottom">
+            <table class="table tableStriped">
+                <thead>
+                    <th>选择</th>
+                    <th>序号</th>
+                    <th>类别</th>
+                    <th>项目</th>
+                    <th>费用</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>0051</td>
+                        <td>1</td>
+                        <td>血清</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>0052</td>
+                        <td>1</td>
+                        <td>血清</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>0051</td>
+                        <td>1</td>
+                        <td>血清</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>0052</td>
+                        <td>1</td>
+                        <td>血清</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="piaochecked on_check">
+                                <input name="list" type="checkbox" class="radioclass inputCheckBox" value="">
+                            </div>
+                        </td>
+                        <td>0052</td>
+                        <td>1</td>
+                        <td>血清</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="totalPay">
+            应付金额：<span class="fOrange">30元</span>
+        </div>
+        <div class="page">
+            <a href="#"><span class="triangle-left"></span>&nbsp;上一页</a>
+            <a href="#" class="mL30">下一页&nbsp;<span class="triangle-right"></span></a>
+        </div>
+    </div>
+
+    <!-- 倒计时-->
+    <div class="timer">
+        28
+    </div>
+
+    <!--按钮-->
+    <a href="#" class="btn">
+        取消
+    </a>
+    <a href="#" class="btn btnOk mR10">
+        支付
+    </a>
+</div>
+
+
+
+
+
+
+
+
+<script src="js/jquery-2.2.3.js"></script>
+<script src="js/common.js"></script>
+<script>
+
+</script>
+
+</body>
+</html>

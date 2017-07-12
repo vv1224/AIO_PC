@@ -1,0 +1,39 @@
+/*π“∫≈“≥√Ê—˘ Ω*/
+.content{
+    padding:150px 100px;
+}
+.button{
+    position: relative;
+    display:block;
+    float: left;
+    width:224px;
+    height:118px;
+    background: #24558C;
+    background-image: -webkit-linear-gradient(to top, #24558C, #3A71A9);
+    background-image: linear-gradient(to top, #24558C, #3A71A9);
+    box-shadow: -1px 2px 2px 1px #26282A;
+    color: #fff;
+    font-size:34px;
+    text-align: center;
+}
+.LineHeight{
+    line-height: 118px;
+}
+.button img{
+    position: absolute;
+    top:33px;
+    left:10px;
+}
+
+.mT88{margin-top: 88px!important;}
+.mR75{margin-right: 75px!important;}
+
+
+
+
+
+
+
+
+
+

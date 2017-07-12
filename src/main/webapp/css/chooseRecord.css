@@ -1,0 +1,47 @@
+/*选择预约记录页面样式*/
+/*&&选择缴费清单页面样式*/
+.content{
+    padding-left:40px;
+    padding-top:56px;
+    padding-right: 40px;
+}
+input{
+    color:#114C8F !important;
+}
+.prompt{
+    color:red;
+}
+
+
+/*&&选择缴费清单页面样式   payProject.html*/
+.totalPay{
+    position: absolute;
+    bottom:35px;left:70px;
+    font-size:18px;
+}
+.fOrange{
+    color:orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

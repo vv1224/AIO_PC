@@ -22,7 +22,6 @@ import java.util.*;
 @Controller
 public class SendPatientCardController {
 
-
     /**
      * 确认身份证信息
      * @param response
