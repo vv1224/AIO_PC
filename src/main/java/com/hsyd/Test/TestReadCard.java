@@ -1,10 +1,12 @@
 package com.hsyd.Test;
 
 import dcrf.*;
+import org.junit.Test;
 
 public class TestReadCard
 {
-    public static void main(String[] args)
+    @Test
+    public void aa()
     {
         short status;
         int lDevice = 0;
@@ -13,7 +15,7 @@ public class TestReadCard
         char[] pRBuffer = new char[16];
         JavaRD800 rd = new JavaRD800();
 
-        lDevice = rd.dc_init(0,115200);
+        lDevice = rd.dc_init(100,115200);
         if(lDevice <= 0)
         {
             System.out.print("dc_init error!\n");
