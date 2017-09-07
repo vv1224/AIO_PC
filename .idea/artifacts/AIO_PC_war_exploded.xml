@@ -81,6 +81,8 @@
           <element id="library" level="project" name="Maven: com.sun.jersey:jersey-core:1.19" />
           <element id="library" level="project" name="Maven: javax.ws.rs:jsr311-api:1.1.1" />
           <element id="library" level="project" name="Maven: com.sun.jersey:jersey-client:1.19" />
+          <element id="library" level="project" name="Maven: net.java.dev.jna:jna-platform:4.1.0" />
+          <element id="library" level="project" name="Maven: net.java.dev.jna:jna:4.1.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">
